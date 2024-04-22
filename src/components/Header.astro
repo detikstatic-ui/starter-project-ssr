@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import { BASE_URL } from "@/consts";
+---
+
+<header
+  id="header"
+  class="z-10 mx-auto flex h-auto w-full max-w-6xl items-center justify-between gap-2 bg-white px-4 py-5">
+  <a href="#" class="w-64">
+    <Image src={`${BASE_URL}/images/logo.png`} width={200} height={60} alt="A description of my image." />
+  </a>
+  <div class="isolate block">
+    <a href="#">
+      <img
+        src="https://online.detik.com/design/detik/assets/images/ads/grey-leaderboard.png"
+        alt="alt text"
+      />
+    </a>
+  </div>
+</header>
